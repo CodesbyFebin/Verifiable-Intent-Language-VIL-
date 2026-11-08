@@ -1,0 +1,15 @@
+[package]
+name = "vil"
+version = "1.0.0"
+edition = "2021"
+description = "Verifiable Intent Language (VIL): layered SD-JWT delegation chain binding identity, purchase intent, and agent actions — ES256, RFC 9901 / 7515 / 7517 / 7800, fail-closed, no mocks"
+license = "MIT"
+autoexamples = false
+[dependencies]
+sha2 = "0.10"
+p256 = { version = "0.13", features = ["ecdsa"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+hex = "0.4"
+rand = "0.8"
+base64 = "0.22"

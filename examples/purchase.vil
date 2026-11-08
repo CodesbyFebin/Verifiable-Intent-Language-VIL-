@@ -1,0 +1,8 @@
+intent purchase(
+  item: String,
+  maxAmountCents: u64,
+) -> Sealed<Receipt>
+{
+  let escrowId: Escrow = escrow(item, maxAmountCents) @x402;
+  return seal(item, escrowId);
+}
